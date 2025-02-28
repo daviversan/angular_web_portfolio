@@ -7,7 +7,7 @@
         </div>
 
         <div [collapse]="isCollapsed" [isAnimated]="true">
-            <div class="border mb-2 shadow-sm" style="width: 250px;">
+            <div class="border mb-2 shadow-sm" style="width: 550px;">
                 <form>
                     <div class="row mx-0">
                         <div class="col">
@@ -38,8 +38,50 @@
                                     <label class="form-check-label small">Angular</label>
                                 </div>
                             </div>
-                            
+
+                            <div class="form-check">
+                                <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="nodejs"
+                                    (change)="Filter()"
+                                    name="Angular"> 
+                                <label class="form-check-label small">Node.js</label>
+                            </div>
                         </div>
+
+                        <div class="col">
+                            <small><b>Cloud Provider:</b></small>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="aws"
+                                        (change)="Filter()"
+                                        name="MySQL"> 
+                                    <label class="form-check-label small">AWS</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <small><b>DBMS:</b></small>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="mysql"
+                                        (change)="Filter()"
+                                        name="MySQL"> 
+                                    <label class="form-check-label small">MySQL</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </form>
             </div>

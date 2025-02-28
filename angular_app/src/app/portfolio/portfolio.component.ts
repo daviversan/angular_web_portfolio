@@ -17,6 +17,9 @@ export class PortfolioComponent implements OnInit {
   isCollapsed: boolean = true;
   typescript: boolean = false;
   angular: boolean = false;
+  nodejs: boolean = false;
+  aws: boolean = false;
+  mysql: boolean = false;
   filtering: boolean = false;
 
 
@@ -38,7 +41,19 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.ANGULAR);
     }
 
-    if (this.typescript || this.angular) {
+    if (this.nodejs) {
+      filterTags.push(Tag.NODEJS);
+    }
+
+    if (this.aws) {
+      filterTags.push(Tag.AWS);
+    }
+
+    if (this.mysql) {
+      filterTags.push(Tag.MYSQL);
+    }
+
+    if (this.typescript || this.angular || this.nodejs || this.aws || this.mysql) {
       this.filtering = true;
     }
     else {
@@ -52,6 +67,9 @@ export class PortfolioComponent implements OnInit {
   ResetFilters() {
     this.typescript = false;
     this.angular = false;
+    this.nodejs = false;
+    this.aws = false;
+    this.mysql = false;
     this.filtering = false;
 
     this.projects = this.projectService.GetProjects();
