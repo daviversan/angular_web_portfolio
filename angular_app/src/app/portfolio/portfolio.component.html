@@ -22,9 +22,43 @@
                                         name="TypeScript"> 
                                     <label class="form-check-label small">TypeScript</label>
                                 </div>
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="javascript"
+                                        (change)="Filter()"
+                                        name="JavaScript"> 
+                                    <label class="form-check-label small">JavaScript</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="python"
+                                        (change)="Filter()"
+                                        name="Python"> 
+                                    <label class="form-check-label small">Python</label>
+                                </div>
+
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="c_plus"
+                                        (change)="Filter()"
+                                        name="C++"> 
+                                    <label class="form-check-label small">C++</label>
+                                </div>
+
                             </div>
                         </div>
 
+
+                        
                         <div class="col">
                             <small><b>Frameworks:</b></small>
                             <div class="form-group">
@@ -49,6 +83,7 @@
                                 <label class="form-check-label small">Node.js</label>
                             </div>
                         </div>
+
 
                         <div class="col">
                             <small><b>Cloud Provider:</b></small>
@@ -78,6 +113,17 @@
                                         name="MySQL"> 
                                     <label class="form-check-label small">MySQL</label>
                                 </div>
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="postgresql"
+                                        (change)="Filter()"
+                                        name="PostgreSQL"> 
+                                    <label class="form-check-label small">PostgreSQL</label>
+                                </div>
+
                             </div>
                         </div>
 

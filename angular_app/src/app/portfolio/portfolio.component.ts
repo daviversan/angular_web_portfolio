@@ -20,6 +20,11 @@ export class PortfolioComponent implements OnInit {
   nodejs: boolean = false;
   aws: boolean = false;
   mysql: boolean = false;
+  javascript: boolean = false;
+  python: boolean = false;
+  render: boolean = false;
+  postgresql: boolean = false;
+  c_plus: boolean = false;
   filtering: boolean = false;
 
 
@@ -53,7 +58,29 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.MYSQL);
     }
 
-    if (this.typescript || this.angular || this.nodejs || this.aws || this.mysql) {
+    if (this.javascript) {
+      filterTags.push(Tag.JAVASCRIPT);
+    }
+
+    if (this.postgresql) {
+      filterTags.push(Tag.POSTGRESQL);
+    }
+
+    if (this.python) {
+      filterTags.push(Tag.PYTHON);
+    }
+
+    if (this.render) {
+      filterTags.push(Tag.RENDER);
+
+    }
+
+    if (this.c_plus) {
+      filterTags.push(Tag.C_PLUS);
+      
+    }
+
+    if (this.typescript || this.angular || this.nodejs || this.aws || this.mysql || this.javascript || this.postgresql || this.python || this.render || this.c_plus)   {
       this.filtering = true;
     }
     else {
@@ -70,6 +97,11 @@ export class PortfolioComponent implements OnInit {
     this.nodejs = false;
     this.aws = false;
     this.mysql = false;
+    this.javascript = false;
+    this.python = false;
+    this.render = false;
+    this.postgresql = false;
+    this.c_plus = false;
     this.filtering = false;
 
     this.projects = this.projectService.GetProjects();
