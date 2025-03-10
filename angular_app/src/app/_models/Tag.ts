@@ -9,6 +9,15 @@ export class Tag {
     static readonly PYTHON = new Tag('Python', 'red');
     static readonly C_PLUS = new Tag('C++', 'red');
     static readonly AWS = new Tag('AWS', 'blue');
+    static readonly STREAMLIT = new Tag('Streamlit', 'green');
+    static readonly SCIKITLEARN = new Tag('Scikitlearn', 'black');
+    static readonly PANDAS = new Tag('Pandas', 'black');
+    static readonly NUMPY = new Tag('Numpy', 'black');
+    static readonly MATPLOTLIB = new Tag('Matplotlib', 'black');
+    static readonly CSS = new Tag('CSS', 'red');
+    static readonly HTML = new Tag('HTML', 'red');
+    static readonly DBEAVER = new Tag('DBeaver', 'purple');
+    static readonly FIREBASE = new Tag('Firebase', 'green');
 
     private constructor(private readonly key: string, public readonly color: string) { 
 

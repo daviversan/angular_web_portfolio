@@ -25,6 +25,15 @@ export class PortfolioComponent implements OnInit {
   render: boolean = false;
   postgresql: boolean = false;
   c_plus: boolean = false;
+  streamlit: boolean = false;
+  scikitlearn: boolean = false;
+  pandas: boolean = false;
+  numpy: boolean = false;
+  matplotlib: boolean = false;
+  css: boolean = false;
+  html: boolean = false;
+  dbeaver: boolean = false;
+  firebase: boolean = false;
   filtering: boolean = false;
 
 
@@ -80,7 +89,52 @@ export class PortfolioComponent implements OnInit {
       
     }
 
-    if (this.typescript || this.angular || this.nodejs || this.aws || this.mysql || this.javascript || this.postgresql || this.python || this.render || this.c_plus)   {
+    if (this.streamlit) {
+      filterTags.push(Tag.STREAMLIT);
+      
+    }
+
+    if (this.scikitlearn) {
+      filterTags.push(Tag.SCIKITLEARN);
+      
+    }
+
+    if (this.pandas) {
+      filterTags.push(Tag.PANDAS);
+      
+    }
+
+    if (this.numpy) {
+      filterTags.push(Tag.NUMPY);
+      
+    }
+
+    if (this.matplotlib) {
+      filterTags.push(Tag.MATPLOTLIB);
+      
+    }
+
+    if (this.html) {
+      filterTags.push(Tag.HTML);
+      
+    }
+
+    if (this.css) {
+      filterTags.push(Tag.CSS);
+      
+    }
+
+    if (this.firebase) {
+      filterTags.push(Tag.FIREBASE);
+      
+    }
+
+    if (this.dbeaver) {
+      filterTags.push(Tag.DBEAVER);
+      
+    }
+
+    if (this.typescript || this.angular || this.nodejs || this.aws || this.mysql || this.javascript || this.postgresql || this.python || this.render || this.c_plus || this.streamlit || this.scikitlearn || this.pandas || this.numpy || this.matplotlib || this.css || this.html || this.firebase || this.dbeaver) {  
       this.filtering = true;
     }
     else {
@@ -102,6 +156,15 @@ export class PortfolioComponent implements OnInit {
     this.render = false;
     this.postgresql = false;
     this.c_plus = false;
+    this.streamlit = false;
+    this.scikitlearn = false;
+    this.pandas = false;
+    this.numpy = false;
+    this.matplotlib = false;
+    this.css = false;
+    this.html = false;
+    this.firebase = false;
+    this.dbeaver = false;
     this.filtering = false;
 
     this.projects = this.projectService.GetProjects();

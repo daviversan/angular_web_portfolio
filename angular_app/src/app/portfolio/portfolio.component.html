@@ -9,6 +9,8 @@
         <div [collapse]="isCollapsed" [isAnimated]="true">
             <div class="border mb-2 shadow-sm" style="width: 550px;">
                 <form>
+
+                    <!--Linguagens-->
                     <div class="row mx-0">
                         <div class="col">
                             <small><b>Languages:</b></small>
@@ -54,11 +56,32 @@
                                     <label class="form-check-label small">C++</label>
                                 </div>
 
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="html"
+                                        (change)="Filter()"
+                                        name="HTML"> 
+                                    <label class="form-check-label small">HTML</label>
+                                </div>
+
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="css"
+                                        (change)="Filter()"
+                                        name="CSS"> 
+                                    <label class="form-check-label small">CSS</label>
+                                </div>
+
                             </div>
                         </div>
 
-
-                        
+                        <!--Frameworks-->
                         <div class="col">
                             <small><b>Frameworks:</b></small>
                             <div class="form-group">
@@ -82,11 +105,45 @@
                                     name="Angular"> 
                                 <label class="form-check-label small">Node.js</label>
                             </div>
+
+
+                            <div class="form-check">
+                                <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="render"
+                                    (change)="Filter()"
+                                    name="Render"> 
+                                <label class="form-check-label small">Render</label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="firebase"
+                                    (change)="Filter()"
+                                    name="Firebase"> 
+                                <label class="form-check-label small">Firebase</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="streamlit"
+                                    (change)="Filter()"
+                                    name="Streamlit"> 
+                                <label class="form-check-label small">Streamlit</label>
+                            </div>                            
                         </div>
 
+                        
 
+                        <!--Cloud-->
                         <div class="col">
-                            <small><b>Cloud Provider:</b></small>
+                            <small><b>Cloud:</b></small>
                             <div class="form-group">
                                 <div class="form-check">
                                     <input 
@@ -100,9 +157,60 @@
                             </div>
                         </div>
 
-
+                        
+                        <!--Libraries-->
                         <div class="col">
-                            <small><b>DBMS:</b></small>
+                            <small><b>Libraries:</b></small>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="pandas"
+                                        (change)="Filter()"
+                                        name="MySQL"> 
+                                    <label class="form-check-label small">Pandas</label>
+                                </div>
+
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="scikitlearn"
+                                        (change)="Filter()"
+                                        name="Scikitlearn"> 
+                                    <label class="form-check-label small">Scikitlearn</label>
+                                </div>
+
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="numpy"
+                                        (change)="Filter()"
+                                        name="Numpy"> 
+                                    <label class="form-check-label small">Numpy</label>
+                                </div>
+
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="matplotlib"
+                                        (change)="Filter()"
+                                        name="Matplotlib"> 
+                                    <label class="form-check-label small">Matplotlib</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Data tools-->
+                        <div class="col">
+                            <small><b>Data Tools:</b></small>
                             <div class="form-group">
                                 <div class="form-check">
                                     <input 
@@ -114,6 +222,17 @@
                                     <label class="form-check-label small">MySQL</label>
                                 </div>
 
+
+                                <div class="form-check">
+                                    <input 
+                                        type="checkbox" 
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="dbeaver"
+                                        (change)="Filter()"
+                                        name="DBeaver"> 
+                                    <label class="form-check-label small">DBeaver</label>
+                                </div>
+
                                 <div class="form-check">
                                     <input 
                                         type="checkbox" 
@@ -123,11 +242,8 @@
                                         name="PostgreSQL"> 
                                     <label class="form-check-label small">PostgreSQL</label>
                                 </div>
-
                             </div>
                         </div>
-
-                        
                     </div>
                 </form>
             </div>
