@@ -3,6 +3,8 @@
 
 
     <div class="pd-2">
+
+        <!--Experience-->
         <accordion [isAnimated]="true" class="shadow">
             <accordion-group [(isOpen)]="isWorkExperienceOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
@@ -16,7 +18,7 @@
                 </button>
                 
                 <div style="text-align: left;">
-                    <h2 class="mb-0">Summer Intern - Jan, 2025</h2>
+                    <h2 class="mb-0">Summer Internship - Jan, 2025</h2>
                     <h3 class="text-primary">Atvos - São Paulo, Brazil</h3>
 
                     <p><b>Description:</b> Summer internship at Atvos, one of the largest Brazilian biofuel and renewable energy producer.</p>
@@ -27,11 +29,12 @@
                         <li>The main tools used was Python, SQL and PowerBI for data visualization;</li>
                         <li>The result was the delivery of a database consisting of tables formated in a Star Schema, following a gold standard (Medallion Architecture); </li>
                         <li>This database allowed the business team to understand data extracted of the company's power plants and other industrial facilities, in order to keep track of the production levels and create strategies to increase efficiency;</li>    
-                        <li>Atvos <a href="https://atvos.com/">Website.</a></li>
+                        <li>Atvos' <a href="https://atvos.com/"> Website.</a></li>
                     </ul>
                 </div>
             </accordion-group>
     
+            <!--Education-->
             <accordion-group [(isOpen)]="isEducationOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
@@ -42,9 +45,26 @@
                         <div *ngIf="isEducationOpen" style="color: white;">v</div>
                     </div> 
                 </button>
-    
+                
+                <div style="text-align: left;">
+                    <h2 class="mb-0">B.Sc. in Software Engineering - Class of 2027</h2>
+                    <h3 class="text-primary">Inteli - São Paulo, Brazil</h3>
+
+                    <p><b>Description:</b> Currently enrolled in a bachelor's degree in Software Engineering at Inteli</p>
+
+                    <ul>
+                        <li>Entrance year: 2024 </li>
+                        <li>Expected graduation date: December, 2027;</li>
+                        <li>Completed modules to date: 4 of 12;</li>
+                        <li>Current project: Distributed systems, module 5 (Cloud App)</li>
+                        <li>Inteli's <a href="https://www.inteli.edu.br/"> Website.</a></li>
+                    </ul>
+                </div>
+
+
             </accordion-group>
-    
+
+            <!--Certifications-->
             <accordion-group [(isOpen)]="isCertificationsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
@@ -56,8 +76,24 @@
                     </div> 
                 </button>
     
+                <div style="text-align: left;">
+                    <h2 class="mb-0">B.Sc. in Software Engineering - Class of 2027</h2>
+                    <h3 class="text-primary">Inteli - São Paulo, Brazil</h3>
+
+                    <p><b>Description:</b> Currently enrolled in a bachelor's degree in Software Engineering at Inteli</p>
+
+                    <ul>
+                        <li>Entrance year: 2024 </li>
+                        <li>Expected graduation date: December, 2027;</li>
+                        <li>Completed modules to date: 4 of 12;</li>
+                        <li>Current project: Distributed systems, module 5 (Cloud App)</li>
+                        <li>Inteli's <a href="https://www.inteli.edu.br/"> Website.</a></li>
+                    </ul>
+                </div>
+
             </accordion-group>
     
+            <!--skills-->
             <accordion-group [(isOpen)]="isSkillsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
