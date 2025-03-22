@@ -1,0 +1,180 @@
+<div class="container text-center">
+    <a href="assets/Versan-Davi-CV-en.pdf" download class="btn btn-primary mb-5 shadow-border">Download PDF resume</a>
+
+    <div class="pd-2">
+
+        <!--Experience-->
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div> 
+                </button>
+                
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Summer Internship - Jan, 2025</h2>
+                    <h3 class="text-primary">Atvos - São Paulo, Brazil</h3>
+
+                    <p><b>Description:</b> Summer internship at Atvos, one of the largest Brazilian biofuel and renewable energy producer.</p>
+
+                    <ul>
+                        <li>I worked in a data engineering project, contributing with the creation of a database that stored the company's information about its facilities and data related to available equipment, colaborators' behaviour, working units and industrial processes;</li>
+                        <li>This project was developed in Google Big Query through an ETL process (Extract-Load-Transform); </li>
+                        <li>The main tools used was Python, SQL and PowerBI for data visualization;</li>
+                        <li>The result was the delivery of a database consisting of tables formated in a Star Schema, following a gold standard (Medallion Architecture); </li>
+                        <li>This database allowed the business team to understand data extracted of the company's power plants and other industrial facilities, in order to keep track of the production levels and create strategies to increase efficiency;</li>    
+                        <li>Atvos' <a href="https://atvos.com/"> Website.</a></li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <!--Education-->
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div> 
+                </button>
+                
+                <div style="text-align: left;">
+                    <h2 class="mb-0">B.Sc. in Software Engineering - Class of 2027</h2>
+                    <h3 class="text-primary">Inteli - São Paulo, Brazil</h3>
+
+                    <p><b>Description:</b> Currently enrolled in a bachelor's degree in Software Engineering at Inteli</p>
+
+                    <ul>
+                        <li>Entrance year: 2024 </li>
+                        <li>Expected graduation date: December, 2027;</li>
+                        <li>Completed modules to date: 4 of 12;</li>
+                        <li>Current project: Distributed systems, module 5 (Cloud App)</li>
+                        <li>Inteli's <a href="https://www.inteli.edu.br/"> Website.</a></li>
+                    </ul>
+                </div>
+
+
+            </accordion-group>
+
+            <!--Certifications-->
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                    </div> 
+                </button>
+    
+                <div style="text-align: left;">
+                    <h3 class="mb-0">AWS Academy Cloud Foundations</h3>
+                    <ul>
+                        <li>Issued by Amazon Web Services Training and Certification </li>
+                        <li>Course hours completed: 20</li>
+                        <li>Issued on 03/07/2025</li>
+                        <li>Skills: AWS Architecture, AWS Cloud, AWS Core Services, AWS Pricing, AWS Support</li>
+                        <li>Link to digital <a href="https://www.credly.com/badges/8eee042c-05be-4e9d-80d9-8e0c1dd42d61">badge</a></li>
+                    </ul>
+
+                    <h3 class="mb-0">AWS Academy Introduction to Cloud Semester 1</h3>
+                    <ul>
+                        <li>Issued by Amazon Web Services Training and Certification </li>
+                        <li>Course hours completed: 60</li>
+                        <li>Issued on 03/16/2024</li>
+                        <li>Skills: AWS Architecture, AWS Cloud, AWS Core, AWS foundations, AWS Pricing, AWS Support</li>
+                        <li>Link to digital <a href="https://www.credly.com/badges/745c3512-510f-4d48-bf96-51c42a4d5f6a/linked_in_profile">badge</a></li>
+                    </ul>
+
+                    <h3 class="mb-0">Data analysis with Python</h3>
+                    <ul>
+                        <li>Issued by freeCodeCamp</li>
+                        <li>Course hours completed: 300</li>
+                        <li>Issued on 08/20/2024</li>
+                        <li>Skills: Python, Data Analysis, Pandas, Numpy, Matplotlib, Seaborn</li>
+                        <li>Link to <a href="https://www.freecodecamp.org/certification/Davi_Versan/data-analysis-with-python-v7">Certificate</a></li>
+                    </ul>
+
+                    <h3 class="mb-0">Data Scientist Formation</h3>
+                    <ul>
+                        <li>Issued by Udemy</li>
+                        <li>Course hours completed: 46,5</li>
+                        <li>Issued on 08/18/2024</li>
+                        <li>Skills: Python, Data Analysis, Pandas, Numpy, R, SQL, MongoDB, PostgreSQL, Deep Learning </li>
+                        <li>Link to <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-87fcd49d-cd7c-4b45-971c-ad00ad577972.pdf">Certificate</a></li>
+                    </ul>
+
+                    <h3 class="mb-0">Algorithms and Programming Logic</h3>
+                    <ul>
+                        <li>Issued by Udemy</li>
+                        <li>Course hours completed: 30,5</li>
+                        <li>Issued on 04/17/202</li>
+                        <li>Skills: Programming logic with Python, C, C++, C# and Java</li>
+                        <li>Link to <a href="http://ude.my/UC-9011625d-2f85-4c12-93bc-58f3673aaea5">Certificate</a></li>
+                    </ul> 
+                </div>
+
+            </accordion-group>
+    
+            <!--skills-->
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div> 
+                </button>
+    
+                <div class="row justify-content-center" style="text-align: center; justify-content: space-between;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>Angular</li>
+                            <li>NodeJS</li>
+                            <li>Streamlit</li>
+                            <li>Render</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Other skills:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>DBeaver</li>
+                            <li>AWS</li>
+                            <li>Data Science</li>
+                            <li>Data Engineering</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>
