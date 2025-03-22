@@ -1,4 +1,12 @@
 .jumbotron {
     padding: 1rem 1rem;
-    background-color: #e9ecef;
+    background-color: rgb(1, 1, 60)
+}
+
+.display-4 {
+    color: white
+}
+
+h3 {
+    color: white;
 }
